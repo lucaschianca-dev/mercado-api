@@ -31,8 +31,7 @@ public class Produto {
 
     private BigDecimal preco;
 
-    @JsonFormat(pattern = "dd/MM/yyyy")
-    private LocalDate validade;
+    private String validade;
 
     @Enumerated(EnumType.STRING)
     private Tipo tipo;
@@ -48,28 +47,31 @@ public class Produto {
     private boolean ativo = true;
 
     public void atualizaProduto(AtualizaProdutoDTO atualizaProdutoDTO) {
-        if (atualizaProdutoDTO.getId() == null) {
-        } else {
-            if (atualizaProdutoDTO.getNome() != null) {
-                this.nome = atualizaProdutoDTO.getNome();
-            }
-            if (atualizaProdutoDTO.getPreco() != null) {
-                this.preco = atualizaProdutoDTO.getPreco();
-            }
-            if (atualizaProdutoDTO.getValidade() != null) {
-                this.validade = atualizaProdutoDTO.getValidade();
-            }
-            if (atualizaProdutoDTO.getTipo() != null) {
-                this.tipo = atualizaProdutoDTO.getTipo();
-            }
-            if (atualizaProdutoDTO.getDescricaoCurta() != null) {
-                this.descricaoCurta = atualizaProdutoDTO.getDescricaoCurta();
-            }
-            if (atualizaProdutoDTO.getDescricaoLonga() != null) {
-                this.descricaoLonga = atualizaProdutoDTO.getDescricaoLonga();
-            }
+        if (atualizaProdutoDTO.getNome() != null) {
+            this.nome = atualizaProdutoDTO.getNome();
+        }
+
+        if (atualizaProdutoDTO.getPreco() != null) {
+            this.preco = atualizaProdutoDTO.getPreco();
+        }
+
+        if (atualizaProdutoDTO.getValidade() != null) {
+            this.validade = atualizaProdutoDTO.getValidade();
+        }
+
+        if (atualizaProdutoDTO.getTipo() != null) {
+            this.tipo = atualizaProdutoDTO.getTipo();
+        }
+
+        if (atualizaProdutoDTO.getDescricaoCurta() != null) {
+            this.descricaoCurta = atualizaProdutoDTO.getDescricaoCurta();
+        }
+
+        if (atualizaProdutoDTO.getDescricaoLonga() != null) {
+            this.descricaoLonga = atualizaProdutoDTO.getDescricaoLonga();
         }
     }
+
 
     public void ativaProduto() {
         this.ativo = true;
