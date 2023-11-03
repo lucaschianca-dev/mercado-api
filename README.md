@@ -25,7 +25,7 @@ Prerequisites: Java 17
 
 ```bash
 # clone server repository
-git clone https://github.com/lucaschianca-dev/mercado-api.git
+git clone https://github.com/lucaschianca-dev/mercado-api
 
 # enter the project folder
 cd >project folder<
