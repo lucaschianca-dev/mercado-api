@@ -1,6 +1,5 @@
 package com.mercado.apimercado.entities;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.mercado.apimercado.DTO.AtualizaProdutoDTO;
 import com.mercado.apimercado.enums.Tipo;
 import jakarta.persistence.*;
@@ -10,9 +9,6 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.UUID;
 
 @Entity

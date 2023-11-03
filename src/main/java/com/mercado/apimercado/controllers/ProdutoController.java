@@ -1,7 +1,6 @@
 package com.mercado.apimercado.controllers;
 
 import com.mercado.apimercado.DTO.AtualizaProdutoDTO;
-import com.mercado.apimercado.DTO.ProdutoDTO;
 import com.mercado.apimercado.entities.Produto;
 import com.mercado.apimercado.enums.Tipo;
 import com.mercado.apimercado.requests.ProdutoRegistroRequest;

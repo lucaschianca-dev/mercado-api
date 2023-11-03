@@ -1,6 +1,5 @@
 package com.mercado.apimercado.repositories;
 
-import com.mercado.apimercado.DTO.ProdutoDTO;
 import com.mercado.apimercado.entities.Produto;
 import com.mercado.apimercado.enums.Tipo;
 import org.springframework.data.domain.Page;
@@ -10,7 +9,6 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
-import java.util.Optional;
 
 @Repository
 public interface ProdutoRepository extends JpaRepository<Produto, Long> {
