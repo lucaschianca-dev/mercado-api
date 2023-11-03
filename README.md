@@ -23,14 +23,32 @@ Mercado-API é uma aplicação back-end desenvolvida para o desafio de capacita�
 ## Back-end
 Prerequisites: Java 17
 
+# Como rodar o projeto
+
+## Back-end
+Prerequisites: Java 17
+
+## Front-end
+Pré-requisitos: Node V - 18, Angular CLI 16
+
 ```bash
-# clone repository
+# clone server repository
 git clone https://github.com/lucaschianca-dev/mercado-api.git
 
 # enter the project folder
 cd >project folder<
 
 # run the project
+
+# clone UI repository
+git clone
+
+# enter the project folder
+cd >project folder<
+
+# run the project
+ng serve
+
 ```
 
 # Autor
